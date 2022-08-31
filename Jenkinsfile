@@ -4,7 +4,7 @@ pipeline{
 
 // uncomment the following lines by removing /* and */ to enable
     tools{
-       nodejs 'nodejs' 
+       nodejs 'nodejs'
     }
     
 
@@ -18,7 +18,7 @@ pipeline{
         stage('test-app'){
             steps{
                 echo 'this is the test job'
-                sh 'npm test’
+                sh 'npm test'
             }
         }
         stage('package-app'){
